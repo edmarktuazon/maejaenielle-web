@@ -1,0 +1,45 @@
+/* LOGIN PAGE */
+#logInBg{
+    background-image: linear-gradient(to right bottom, #d16ba5, #c863b1, #ba5fc0, #a45ed0, #8360e0, #6a70ed, #497ff8, #008cff, #00a4ff, #00b6f2, #00c4da, #00cfc2);
+}
+
+#contactPage, #personalHome{
+    background-image: linear-gradient(to right top, #00e9ff, #00d8ff, #00c0ff, #8f9aff, #ea5fff);
+    height: 100%;
+}
+
+/* Mobile Size Breakpoints Only */
+@media screen and (max-width: 767px) {
+    #home, #videoGallery, #contactUs{
+        text-align: center;
+    }
+
+    .imgMarginSmall{
+        margin-bottom: 2rem;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    #menu{
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+
+    #marginSmallSize{
+        text-align: center;
+        margin: 2rem 0 0 0;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    #contactPage{
+        height:100vh;
+    }
+
+    #personalHome{
+        height: 100vh;
+        margin-top: 0;
+    }
+}
+
+

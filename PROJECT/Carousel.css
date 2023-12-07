@@ -1,0 +1,83 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+.detel {
+    margin-left: 8%;
+    margin-top: 13%;
+}
+
+.detel h1 {
+    font-size: 50px;
+    color: #212121;
+    margin-bottom: 20px;
+}
+
+span {
+    color: orange;
+}
+
+.detel p {
+    color: #555;
+    line-height: 22px;
+}
+
+.detel a {
+    background: #212121;
+    padding: 10px 18px;
+    text-decoration: none;
+    font-weight: bold;
+    color: #fff;
+    display: inline-block;
+    margin: 30px 0;
+    border-radius: 5px;
+}
+
+.images {
+    width: 45%;
+    height: 80%;
+    position: absolute;
+    bottom: 0;
+    right: 100px;
+}
+
+.images img {
+    height: 100%;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    transition: bottom 1s, left 1s;
+}
+
+.images:hover .shape {
+    bottom: 40px;
+}
+
+.images:hover .girl {
+    left: 45%;
+}
+
+section {
+    margin: 40px 8% 0 120px; /* Adjusted margins */
+}
+
+.box {
+    width: 25%;
+    float: left;
+    padding: 7px;
+    padding-left: 10px;
+    display: block;
+}
+
+.gallery {
+    width: 100%;
+    border-radius: 4px;
+}
+
+.gallery:hover {
+    transform: scale(1.3, 1.3);
+    transition: 0.3s transform;
+} 

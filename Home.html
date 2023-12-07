@@ -1,0 +1,635 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tourist_Attraction in the Philippines</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Latest compiled and minified CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Bootstrap 5 Icon -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+</head>
+
+<body id="home">
+    <nav class="navbar navbar-expand-sm navbar-dark bg-light shadow sticky-top">
+        <div class="container-fluid">
+            <div class="d-flex justify-content-start align-items-center">
+                <a class="navbar-brand"><img src="img/republic logo.png" alt="logo" style="height: 50px;"></a>
+                <a class="navbar-brand"><img src="img/itsMoreFun.png" alt="image" style="height: 50px;"></a>
+            </div>
+            <div class="d-flex justify-content-end">
+                <h4 id="timezone"></h4>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container-fluid py-3">
+
+        <!-- Collapsible Sidebar for Mobile and Tablet -->
+        <div class="d-lg-none" id="marginSmallSize">
+            <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#vertical-tab"
+                aria-expanded="false" aria-controls="vertical-tab">
+                <i class="bi bi-list"></i> Navigation Menu
+            </button>
+        </div>
+
+        <!-- Vertical Tab -->
+        <div class="row">
+            <div class="col-lg-3 col-md-12 d-lg-block" id="menu">
+                <ul class="nav nav-pills flex-column" id="vertical-tab">
+                    <!-- About Philippines Menu -->
+                    <h4 class="my-2"><i class="bi bi-globe-americas"></i> About Philippines</h4>
+                    <li class="nav-item my-2">
+                        <a href="#history" class="nav-link active fs-5" data-bs-toggle="pill"> History
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#geography" class="nav-link fs-5" data-bs-toggle="pill">
+                            Geography & Environment
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#demographics" class="nav-link fs-5" data-bs-toggle="pill">
+                            Demographics
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#culture" class="nav-link fs-5" data-bs-toggle="pill">
+                            Culture
+                        </a>
+                    </li>
+
+                    <!-- Tourist Menu -->
+                    <h4 class="my-2"><i class="bi bi-airplane-fill"></i> Tourist Attractions</h4>
+                    <li class="nav-item my-2">
+                        <a href="#luzon" class="nav-link fs-5" data-bs-toggle="pill">
+                            Luzon
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#visayas" class="nav-link fs-5" data-bs-toggle="pill">
+                            Visayas
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#mindanao" class="nav-link fs-5" data-bs-toggle="pill">
+                            Mindanao
+                        </a>
+                    </li>
+
+                    <!-- Others Menu -->
+                    <li class="nav-item my-2">
+                        <span class="d-grid">
+                            <a href="VideoGallery.html" class="btn btn-primary btn-lg"><i class="bi bi-camera-fill"></i>
+                                Video Gallery</a>
+                        </span>
+                    </li>
+                    <li class="nav-item my-2">
+                        <span class="d-grid">
+                            <a href="Contact_Us.html" class="btn btn-primary btn-lg"><i class="bi bi-telephone-fill"></i>
+                                Contact Us</a>
+                        </span>
+                    </li>
+                    <li class="nav-item">
+                        <span class="d-grid">
+                            <a href="LogIn.html" class="btn btn-danger btn-lg"><i class="bi bi-arrow-left"></i> Sign
+                                out</a>
+                        </span>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="col-lg-9 py-3 border border-primary rounded shadow">
+                <div class="tab-content py-3" id="myTabContent">
+                    <div class="tab-pane fade show active ms-3" id="history">
+                        <h2><i class="bi bi-book-half"></i> History of the Philippines</h2>
+                        <div class="row mt-4">
+                            <h5>Pre-colonial Era (1450 - 1620)</h5>
+                            <div class="col-lg-4 col-md-6 imgMarginSmall">
+                                <img src="img/pre-colonial.jpg" alt="NDI" class="img-fluid rounded shadow"
+                                    style="max-width: 100%;height: auto;">
+                            </div>
+                            <div class="col-lg-8 col-md-6">
+                                <p>The Philippines was inhabited by various indigenous groups long before the arrival of
+                                    Spanish colonizers. These groups had their own distinct cultures, languages, and
+                                    social structures. The earliest evidence of human habitation in the Philippines
+                                    dates back to around 30,000 years ago. By the 10th century, several thriving
+                                    kingdoms had emerged, including the Butuan Kingdom in Mindanao, the Madjapahit
+                                    Empire in Visayas, and the Sultanate of Sulu in the southwestern islands. These
+                                    kingdoms engaged in trade with neighboring countries, including China, India, and
+                                    Arabia.</p>
+                            </div>
+                        </div>
+
+                        <div class="row mt-4">
+                            <h5>Spanish Colonization (1565 - 1898)</h5>
+                            <div class="col-lg-4 col-md-6 imgMarginSmall">
+                                <img src="img/Spanish Colonization.jpeg" alt="NDI" class="img-fluid rounded shadow"
+                                    style="max-width: 100%;height: auto;">
+                            </div>
+                            <div class="col-lg-8 col-md-6">
+                                <p>In 1565, Spanish explorer Miguel López de Legazpi arrived in the Philippines and
+                                    claimed the islands for Spain. Over the next 300 years, the Philippines was under
+                                    Spanish rule.
+                                    During this time, the Spanish introduced Catholicism, the Spanish language, and a
+                                    centralized government system. The Spanish also established a number of schools,
+                                    hospitals, and other public institutions.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="row mt-4">
+                            <h5>American Rule (1898 - 1946)</h5>
+                            <div class="col-lg-4 col-md-6 imgMarginSmall">
+                                <img src="img/American Rule.jpg" alt="NDI" class="img-fluid rounded shadow"
+                                    style="max-width: 100%;height: auto;">
+                            </div>
+                            <div class="col-lg-8 col-md-6">
+                                <p>In 1898, the Philippines was ceded to the United States following the
+                                    Spanish-American War. American rule brought about significant changes, including the
+                                    introduction of a democratic government system, the establishment of public
+                                    education, and the construction of infrastructure. However, American rule was also
+                                    marked by periods of unrest, such as the Philippine-American War (1899-1902) and the
+                                    Hukbalahap Rebellion (1946-1954).</p>
+                            </div>
+                        </div>
+
+                        <div class="row mt-4">
+                            <h5>Independence and the Republic of the Philippines (1946 - present)</h5>
+                            <div class="col-lg-4 col-md-6 imgMarginSmall">
+                                <img src="img/Independence.jpg" alt="NDI" class="img-fluid rounded shadow"
+                                    style="max-width: 100%;height: auto;">
+                            </div>
+                            <div class="col-lg-8 col-md-6">
+                                <p>The Philippines gained its independence from the United States on July 4, 1946. Since
+                                    then, the country has faced a number of challenges, including political instability,
+                                    economic crises, and natural disasters. However, the Philippines has also made
+                                    significant progress in recent decades, and is now considered one of the
+                                    fastest-growing economies in Southeast Asia.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tab-pane fade ms-3" id="geography">
+                        <h2><i class="bi bi-book-half"></i> Geography and Environment of the Philippines</h2>
+                        <div class="row mt-4">
+                            <div class="col-lg-4 col-md-5 imgMarginSmall">
+                                <img src="img/map.jpg" alt="map img" class="img-fluid rounded shadow"
+                                    style="max-width: 100%;height: auto;">
+                            </div>
+                            <div class="col-lg-8 col-md-6">
+                                <h4>Geography</h4>
+                                <p class="lead">The Philippines is an archipelago of over 7,000 islands in Southeast
+                                    Asia. The three
+                                    largest islands are Luzon, Mindanao, and Visayas. The country has a total land area
+                                    of over 300,000 square kilometers. The Philippines is bordered by the Pacific Ocean
+                                    to the east, the South China Sea to the west, and the Celebes Sea to the south.</p>
+
+                                <h4 class="mt-5">Environment</h4>
+                                <p class="lead">The Philippines is a biodiversity hotspot, with a wide variety of plant
+                                    and animal
+                                    life. The country's forests are home to many endangered species, such as the
+                                    Philippine Eagle and the Tamaraw. The Philippines also has a number of coral reefs,
+                                    which are important ecosystems for marine life.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tab-pane fade text-center" id="demographics">
+                        <h2><i class="bi bi-book-half"></i> Geography and Environment of the Philippines</h2>
+                        <h4 class="mt-5"><i class="bi bi-geo-alt-fill"></i> Demographics by Region</h4>
+                        <div class="row justify-content-around align-items-center text-center my-3">
+                            <div class="col-lg-5 col-md-3 mt-3">
+                                <p class="lead fs-2">Luzon</p>
+                            </div>
+                            <div class="col-lg-7 col-md-7 py-3" id="progress">
+                                <div class="progress shadow" role="progressbar" aria-label="Success example"
+                                    aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" style="height:40px">
+                                    <div class="progress-bar bg-danger fw-bold lead" style="width: 80%">55 million
+                                        people</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row justify-content-around align-items-center text-center my-3">
+                            <div class="col-lg-5 col-md-3 mt-3">
+                                <p class="lead fs-2">Visayas</p>
+                            </div>
+                            <div class="col-lg-7 col-md-7 py-3" id="progress">
+                                <div class="progress shadow" role="progressbar" aria-label="Success example"
+                                    aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" style="height:40px">
+                                    <div class="progress-bar bg-warning fw-bold lead" style="width: 50%">27 million
+                                        people</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row justify-content-around align-items-center text-center my-3">
+                            <div class="col-lg-5 col-md-3 mt-3">
+                                <p class="lead fs-2">Mindanao</p>
+                            </div>
+                            <div class="col-lg-7 col-md-7 py-3" id="progress">
+                                <div class="progress shadow" role="progressbar" aria-label="Success example"
+                                    aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" style="height:40px">
+                                    <div class="progress-bar bg-success fw-bold lead" style="width: 65%">28 million
+                                        people</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <h4 class="mt-5"><i class="bi bi-megaphone-fill"></i> Demographics by Ethnicity</h4>
+                        <div class="row justify-content-around align-items-center text-center my-3">
+                            <div class="col-lg-5 col-md-3 mt-3">
+                                <p class="lead fs-2">Tagalog</p>
+                            </div>
+                            <div class="col-lg-7 col-md-7 py-3" id="progress">
+                                <div class="progress shadow" role="progressbar" aria-label="Success example"
+                                    aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" style="height:40px">
+                                    <div class="progress-bar bg-danger fw-bold lead" style="width: 70%">70%</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row justify-content-around align-items-center text-center my-3">
+                            <div class="col-lg-5 col-md-3 mt-3">
+                                <p class="lead fs-2">Cebuano</p>
+                            </div>
+                            <div class="col-lg-7 col-md-7 py-3" id="progress">
+                                <div class="progress shadow" role="progressbar" aria-label="Success example"
+                                    aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" style="height:40px">
+                                    <div class="progress-bar bg-warning fw-bold lead" style="width: 40%">40%</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row justify-content-around align-items-center text-center my-3">
+                            <div class="col-lg-5 col-md-3 mt-3">
+                                <p class="lead fs-2">Ilocano</p>
+                            </div>
+                            <div class="col-lg-7 col-md-7 py-3" id="progress">
+                                <div class="progress shadow" role="progressbar" aria-label="Success example"
+                                    aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" style="height:40px">
+                                    <div class="progress-bar bg-success fw-bold lead" style="width: 35%">35%</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row justify-content-around align-items-center text-center my-3">
+                            <div class="col-lg-5 col-md-3 mt-3">
+                                <p class="lead fs-2">Bicolano</p>
+                            </div>
+                            <div class="col-lg-7 col-md-7 py-3" id="progress">
+                                <div class="progress shadow" role="progressbar" aria-label="Success example"
+                                    aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" style="height:40px">
+                                    <div class="progress-bar bg-info fw-bold lead" style="width: 25%">25%</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row justify-content-around align-items-center text-center my-3">
+                            <div class="col-lg-5 col-md-3 mt-3">
+                                <p class="lead fs-2">Waray</p>
+                            </div>
+                            <div class="col-lg-7 col-md-7 py-3" id="progress">
+                                <div class="progress shadow" role="progressbar" aria-label="Success example"
+                                    aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" style="height:40px">
+                                    <div class="progress-bar bg-primary fw-bold lead" style="width: 25%">25%</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <h4 class="mt-5"><i class="bi bi-person-fill"></i> Demographics by Religion</h4>
+                        <div class="row justify-content-around align-items-center text-center my-3">
+                            <div class="col-lg-5 col-md-3 mt-3">
+                                <p class="lead fs-2">Catholic</p>
+                            </div>
+                            <div class="col-lg-7 col-md-7 py-3" id="progress">
+                                <div class="progress shadow" role="progressbar" aria-label="Success example"
+                                    aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" style="height:40px">
+                                    <div class="progress-bar bg-danger fw-bold lead" style="width: 50%">50%</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row justify-content-around align-items-center text-center my-3">
+                            <div class="col-lg-5 col-md-3 mt-3">
+                                <p class="lead fs-2">Protestant</p>
+                            </div>
+                            <div class="col-lg-7 col-md-7 py-3" id="progress">
+                                <div class="progress shadow" role="progressbar" aria-label="Success example"
+                                    aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" style="height:40px">
+                                    <div class="progress-bar bg-warning fw-bold lead" style="width: 40%">30%</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row justify-content-around align-items-center text-center my-3">
+                            <div class="col-lg-5 col-md-3 mt-3">
+                                <p class="lead fs-2">Islam</p>
+                            </div>
+                            <div class="col-lg-7 col-md-7 py-3" id="progress">
+                                <div class="progress shadow" role="progressbar" aria-label="Success example"
+                                    aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" style="height:40px">
+                                    <div class="progress-bar bg-success fw-bold lead" style="width: 25%">10%</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row justify-content-around align-items-center text-center my-3">
+                            <div class="col-lg-5 col-md-3 mt-3">
+                                <p class="lead fs-2">Others</p>
+                            </div>
+                            <div class="col-lg-7 col-md-7 py-3" id="progress">
+                                <div class="progress shadow" role="progressbar" aria-label="Success example"
+                                    aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" style="height:40px">
+                                    <div class="progress-bar bg-primary fw-bold lead" style="width: 25%">10%</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tab-pane fade" id="culture">
+                        <h2><i class="bi bi-book-half"></i> Culture of the Philippines</h2>
+                        <p class="lead">The Philippines has a rich and diverse culture, which is influenced by a number
+                            of different factors, including the country's pre-colonial history, Spanish colonization,
+                            and American rule. Filipino culture is characterized by its hospitality, its strong sense of
+                            family, and its love for music and celebrations.</p>
+                        <div class="row justify-content-center align-items-center mt-5">
+                            <h2>Filipino Values</h2>
+                            <div class="col-lg-6 col-md-6 mt-2 imgMarginSmall">
+                                <img src="img/pakikisama.jpg" alt="pakikisama img" class="img-fluid rounded shadow"
+                                    style="max-width: 100%;height: auto;">
+                            </div>
+                            <div class="col-lg-6 col-md-6">
+                                <h4><i class="bi bi-stars"></i> Pakikisama</h4>
+                                <p class="lead">The spirit of communal unity and cooperation.</p>
+                            </div>
+                        </div>
+
+                        <div class="row d-flex justify-content-center align-items-center mt-5">
+                            <div class="col-lg-6 col-md-6 imgMarginSmall">
+                                <img src="img/bayanihan.jpg" alt="bayanihan img" class="img-fluid rounded shadow"
+                                    style="max-width: 100%;height: auto;">
+                            </div>
+                            <div class="col-lg-6 col-md-6">
+                                <h4><i class="bi bi-stars"></i> Bayanihan</h4>
+                                <p class="lead">The act of helping others without expecting anything in return.</p>
+                            </div>
+                        </div>
+
+                        <div class="row justify-content-center align-items-center mt-5">
+                            <div class="col-lg-6 col-md-6 mt-2 imgMarginSmall">
+                                <img src="img/hiya.jpg" alt="hiya img" class="img-fluid rounded shadow"
+                                    style="max-width: 100%;height: auto;">
+                            </div>
+                            <div class="col-lg-6 col-md-6">
+                                <h4><i class="bi bi-stars"></i> Hiya</h4>
+                                <p class="lead">The sense of shame or embarrassment.</p>
+                            </div>
+                        </div>
+
+                        <div class="row d-flex justify-content-center align-items-center mt-5">
+                            <div class="col-lg-6 col-md-6 imgMarginSmall">
+                                <img src="img/damayan.jpg" alt="damayan img" class="img-fluid rounded shadow"
+                                    style="max-width: 100%;height: auto;">
+                            </div>
+                            <div class="col-lg-6 col-md-6">
+                                <h4><i class="bi bi-stars"></i> Damayan</h4>
+                                <p class="lead">The act of providing mutual support and assistance.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tab-pane fade" id="luzon">
+                        <h2><i class="bi bi-geo-alt-fill"></i> Luzon</h2>
+                        <div class="row justify-content-center align-items-center mt-3">
+                            <div class="col-lg-6 col-md-6 mt-2 imgMarginSmall">
+                                <img src="img/mayon_volcano.jpg" alt="mayon_volcano img"
+                                    class="img-fluid rounded shadow" style="max-width: 100%;height: auto;">
+                            </div>
+                            <div class="col-lg-6 col-md-6">
+                                <h4><i class="bi bi-stars"></i> Mayon Volcano</h4>
+                                <p class="lead">Mayon Volcano is an active volcano located in Albay Province, Luzon. It
+                                    is known for its perfect cone shape and is considered one of the most beautiful
+                                    volcanoes in the world.</p>
+                            </div>
+                        </div>
+
+                        <div class="row justify-content-center align-items-center mt-3">
+                            <div class="col-lg-6 col-md-6 mt-2 imgMarginSmall">
+                                <img src="img/boracay.jpg" alt="boracay img" class="img-fluid rounded shadow"
+                                    style="max-width: 100%;height: auto;">
+                            </div>
+                            <div class="col-lg-6 col-md-6">
+                                <h4><i class="bi bi-stars"></i> Boracay</h4>
+                                <p class="lead">Boracay is a small island in the Western Visayas region of the
+                                    Philippines. It is known for its white-sand beaches, clear waters, and vibrant
+                                    nightlife.</p>
+                            </div>
+                        </div>
+
+                        <div class="row justify-content-center align-items-center mt-3">
+                            <div class="col-lg-6 col-md-6 mt-2 imgMarginSmall">
+                                <img src="img/palawan.jpg" alt="palawan img" class="img-fluid rounded shadow"
+                                    style="max-width: 100%;height: auto;">
+                            </div>
+                            <div class="col-lg-6 col-md-6">
+                                <h4><i class="bi bi-stars"></i> Palawan</h4>
+                                <p class="lead">Palawan is a large island in the western Philippines. It is known for
+                                    its pristine beaches, lush rainforests, and abundant wildlife.</p>
+                            </div>
+                        </div>
+
+                        <div class="row justify-content-center align-items-center mt-3">
+                            <div class="col-lg-6 col-md-6 mt-2 imgMarginSmall">
+                                <img src="img/puerto.jpg" alt="puerto img" class="img-fluid rounded shadow"
+                                    style="max-width: 100%;height: auto;">
+                            </div>
+                            <div class="col-lg-6 col-md-6">
+                                <h5><i class="bi bi-stars"></i> Puerto Princesa Subterranean River National Park</h5>
+                                <p class="lead">The Puerto Princesa Subterranean River National Park is a UNESCO World
+                                    Heritage Site located in Palawan. It is home to a navigable underground river that
+                                    is over 8 kilometers long.</p>
+                            </div>
+                        </div>
+
+                        <div class="row justify-content-center align-items-center mt-3">
+                            <div class="col-lg-6 col-md-6 mt-2 imgMarginSmall">
+                                <img src="img/intramuros.jpg" alt="boracay img" class="img-fluid rounded shadow"
+                                    style="max-width: 100%;height: auto;">
+                            </div>
+                            <div class="col-lg-6 col-md-6">
+                                <h4><i class="bi bi-stars"></i> Intramuros</h4>
+                                <p class="lead">Intramuros is a walled city in Manila, Philippines. It was founded in
+                                    1571 by Spanish colonizers and was the capital of the Philippines until 1945.
+                                    Intramuros is home to many historical landmarks, including Fort Santiago, San
+                                    Agustin Church, and the Manila Cathedral.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="visayas">
+                        <h2><i class="bi bi-geo-alt-fill"></i> Visayas</h2>
+                        <div class="row justify-content-center align-items-center mt-3">
+                            <div class="col-lg-6 col-md-6 mt-2 imgMarginSmall">
+                                <img src="img/chocolateHills.jpg" alt="chocolateHills img"
+                                    class="img-fluid rounded shadow" style="max-width: 100%;height: auto;">
+                            </div>
+                            <div class="col-lg-6 col-md-6">
+                                <h4><i class="bi bi-stars"></i> Chocolate Hills</h4>
+                                <p class="lead">The Chocolate Hills are a geological formation located in Bohol
+                                    Province, Visayas. They are composed of over 1,200 cone-shaped hills that turn brown
+                                    during the dry season.</p>
+                            </div>
+                        </div>
+
+                        <div class="row justify-content-center align-items-center mt-3">
+                            <div class="col-lg-6 col-md-6 mt-2 imgMarginSmall">
+                                <img src="img/panglao.jpg" alt="panglao img" class="img-fluid rounded shadow"
+                                    style="max-width: 100%;height: auto;">
+                            </div>
+                            <div class="col-lg-6 col-md-6">
+                                <h4><i class="bi bi-stars"></i> Panglao Island</h4>
+                                <p class="lead">Panglao Island is located in Bohol Province, Visayas. It is home to
+                                    several beautiful beaches, including Alona Beach, which is one of the most popular
+                                    tourist destinations in the Philippines.</p>
+                            </div>
+                        </div>
+
+                        <div class="row justify-content-center align-items-center mt-3">
+                            <div class="col-lg-6 col-md-6 mt-2 imgMarginSmall">
+                                <img src="img/kawasanFalls.jpg" alt="kawasanFalls img" class="img-fluid rounded shadow"
+                                    style="max-width: 100%;height: auto;">
+                            </div>
+                            <div class="col-lg-6 col-md-6">
+                                <h4><i class="bi bi-stars"></i> Kawasan Falls</h4>
+                                <p class="lead">Kawasan Falls is a three-tiered waterfall located in Badian, Cebu,
+                                    Philippines. It is a popular tourist destination for swimming and hiking.</p>
+                            </div>
+                        </div>
+
+                        <div class="row justify-content-center align-items-center mt-3">
+                            <div class="col-lg-6 col-md-6 mt-2 imgMarginSmall">
+                                <img src="img/malapascua.jpg" alt="malapascua img" class="img-fluid rounded shadow"
+                                    style="max-width: 100%;height: auto;">
+                            </div>
+                            <div class="col-lg-6 col-md-6">
+                                <h4><i class="bi bi-stars"></i> Malapascua Island</h4>
+                                <p class="lead">Malapascua Island is a small island located in the Central Visayas
+                                    region of the Philippines. It is known for its thresher shark dives, which offer the
+                                    chance to see these elusive creatures in their natural habitat.</p>
+                            </div>
+                        </div>
+
+                        <div class="row justify-content-center align-items-center mt-3">
+                            <div class="col-lg-6 col-md-6 mt-2 imgMarginSmall">
+                                <img src="img/oslobWhaleShark.jpg" alt="oslobWhaleShark img"
+                                    class="img-fluid rounded shadow" style="max-width: 100%;height: auto;">
+                            </div>
+                            <div class="col-lg-6 col-md-6">
+                                <h4><i class="bi bi-stars"></i> Oslob Whale Sharks</h4>
+                                <p class="lead">Oslob is a small town in Cebu, Philippines, that is known for its whale
+                                    shark watching tours. Visitors can swim alongside these gentle giants, which can
+                                    grow up to 40 feet long.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="mindanao">
+                        <h2><i class="bi bi-geo-alt-fill"></i> Mindanao</h2>
+                        <div class="row justify-content-center align-items-center mt-3">
+                            <div class="col-lg-6 col-md-6 mt-2 imgMarginSmall">
+                                <img src="img/mt.apo.jpg" alt="mt.apo img" class="img-fluid rounded shadow"
+                                    style="max-width: 100%;height: auto;">
+                            </div>
+                            <div class="col-lg-6 col-md-6">
+                                <h4><i class="bi bi-stars"></i> Mount Apo</h4>
+                                <p class="lead">Mount Apo is the highest mountain in the Philippines. It is an active
+                                    volcano and is located in Davao del Sur Province, Mindanao.</p>
+                            </div>
+                        </div>
+
+                        <div class="row justify-content-center align-items-center mt-3">
+                            <div class="col-lg-6 col-md-6 mt-2 imgMarginSmall">
+                                <img src="img/siargao.jpg" alt="siargao img" class="img-fluid rounded shadow"
+                                    style="max-width: 100%;height: auto;">
+                            </div>
+                            <div class="col-lg-6 col-md-6">
+                                <h4><i class="bi bi-stars"></i> Siargao</h4>
+                                <p class="lead">Siargao Island is a popular surfing destination located in Surigao del
+                                    Sur, Philippines. It is known for its powerful waves and laid-back atmosphere.</p>
+                            </div>
+                        </div>
+
+                        <div class="row justify-content-center align-items-center mt-3">
+                            <div class="col-lg-6 col-md-6 mt-2 imgMarginSmall">
+                                <img src="img/enchantedRiver.jpg" alt="enchantedRiver img"
+                                    class="img-fluid rounded shadow" style="max-width: 100%;height: auto;">
+                            </div>
+                            <div class="col-lg-6 col-md-6">
+                                <h4><i class="bi bi-stars"></i> Enchanted River</h4>
+                                <p class="lead">The Enchanted River is a natural wonder located in Hinatuan, Surigao del
+                                    Sur, Philippines. The water in the river is so clear that it is said to be able to
+                                    reflect the sky above, giving it its name.</p>
+                            </div>
+                        </div>
+
+                        <div class="row justify-content-center align-items-center mt-3">
+                            <div class="col-lg-6 col-md-6 mt-2 imgMarginSmall">
+                                <img src="img/camiguin.jpg" alt="camiguin img" class="img-fluid rounded shadow"
+                                    style="max-width: 100%;height: auto;">
+                            </div>
+                            <div class="col-lg-6 col-md-6">
+                                <h4><i class="bi bi-stars"></i> Camiguin Island</h4>
+                                <p class="lead">Camiguin Island is a small island located in the Northern Mindanao
+                                    region of the Philippines. It is known for its white-sand beaches, clear waters, and
+                                    several volcanic springs.</p>
+                            </div>
+                        </div>
+
+                        <div class="row justify-content-center align-items-center mt-3">
+                            <div class="col-lg-6 col-md-6 mt-2 imgMarginSmall">
+                                <img src="img/lakeSebu.jpg" alt="lakeSebu img" class="img-fluid rounded shadow"
+                                    style="max-width: 100%;height: auto;">
+                            </div>
+                            <div class="col-lg-6 col-md-6">
+                                <h4><i class="bi bi-stars"></i> Lake Sebu</h4>
+                                <p class="lead">Lake Sebu is a crater lake located in South Cotabato Province, Mindanao.
+                                    It is a popular destination for white-water rafting and birdwatching.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer class="py-3 mt-4">
+            <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+                <li class="nav-item"><a href="Home.html" class="nav-link px-2 text-body-secondary">About Philippines</a>
+                </li>
+                <li class="nav-item"><a href="Home.html" class="nav-link px-2 text-body-secondary">Tourist
+                        Attractions</a></li>
+                <li class="nav-item"><a href="VideoGallery.html" class="nav-link px-2 text-body-secondary">Video
+                        Gallery</a></li>
+                <li class="nav-item"><a href="Contact_Us.html" class="nav-link px-2 text-body-secondary">Contact Us</a>
+                </li>
+                <li class="nav-item"><a href="LogIn.html" class="nav-link px-2 text-body-secondary">Log In</a></li>
+            </ul>
+            <p class="text-center text-body-secondary">Copyright @2023. All Rights Reserved.</p>
+        </footer>
+    </div>
+
+    <script>
+        function updateDateTime() {
+            const d = new Date();
+            const options = { year: 'numeric', month: 'long', day: 'numeric', hour: 'numeric', minute: 'numeric', second: 'numeric', hour12: true, timeZone: 'Asia/Manila' };
+            const formattedDate = d.toLocaleString('en-US', options);
+            document.getElementById("timezone").innerHTML = formattedDate;
+        }
+
+        // Update the date and time every second (1000 milliseconds)
+        setInterval(updateDateTime, 1000);
+
+        // Initial update when the page loads
+        updateDateTime();
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Gallery</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Latest compiled and minified CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Bootstrap 5 Icon -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+
+    <style>
+        body {
+            background-image: linear-gradient(to right top, #0066ff, #008cff, #00abff, #00c6ff, #00deff);
+        }
+
+        @media (max-width: 767px) {
+        .video-container{
+            margin: 0;
+        }
+
+        .video-frame {
+            margin-right: 0 !important;
+            margin-top: 48px;
+        }
+    }
+    </style>
+</head>
+
+<body id="videoGallery">
+    <section style="height: 100%;">
+        <div class="container-fluid py-5">
+            <div class="row justify-content-center align-items-center video-container">
+                <h2 class="text-light text-center"><i class="bi bi-camera-fill"></i> Video Gallery</h2>
+                <div class="col-lg-5 col-md-4 rounded shadow bg-dark p-3 mt-5 me-3 video-frame">
+                    <iframe class="img-thumbnail" width="560" height="315"
+                        src="https://www.youtube.com/embed/DEJ_ma-gvsM?si=MKzKD6ops-a7UOCb" title="YouTube video player"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe>
+                </div>
+                <div class="col-lg-5 col-md-4 rounded shadow bg-dark p-3 mt-5 video-frame">
+                    <iframe class="img-thumbnail" width="560" height="315"
+                        src="https://www.youtube.com/embed/hOc3RfQqs_s?si=mtISocYU2o99AZoR" title="YouTube video player"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe>
+                </div>
+            </div>
+
+            <div class="row justify-content-center align-items-center py-2 mt-2 video-container">
+                <div class="col-lg-5 col-md-4 rounded shadow bg-dark p-3 me-3 video-frame">
+                    <iframe class="img-thumbnail" width="560" height="315"
+                        src="https://www.youtube.com/embed/XbJttqaP5sg?si=VWWtkyBK1hQSEYnn" title="YouTube video player"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe>
+                </div>
+                <div class="col-lg-5 col-md-4 rounded shadow p-3 bg-dark video-frame">
+                    <iframe class="img-thumbnail" width="560" height="315"
+                        src="https://www.youtube.com/embed/m5M-sE4reDw?si=TO_lgjpGU87Ob_EM" title="YouTube video player"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe>
+                </div>
+            </div>
+
+            <div class="row justify-content-center align-items-center py-2 mt-2 video-container">
+                <div class="col-lg-5 col-md-4 rounded shadow bg-dark p-3 me-3 video-frame">
+                    <iframe class="img-thumbnail" width="560" height="315"
+                        src="https://www.youtube.com/embed/xZ_l5OQHdSI?si=T6__F8Xj_k85tehm" title="YouTube video player"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe>
+                </div>
+                <div class="col-lg-5 col-md-4 rounded shadow bg-dark p-3 video-frame">
+                    <iframe class="img-thumbnail" width="560" height="315"
+                        src="https://www.youtube.com/embed/y5vX8ZqkHaY?si=q7osGB96DVaHqbZi" title="YouTube video player"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe>
+                </div>
+            </div>
+
+            <div class="row justify-content-center align-items-center py-2 mt-2 video-container">
+                <div class="col-lg-5 col-md-4 rounded shadow bg-dark p-3 me-3 video-frame">
+                    <iframe class="img-thumbnail" width="560" height="315"
+                        src="https://www.youtube.com/embed/cz_fmeY0YGE?si=Euoa9RpjNDW3RUAx" title="YouTube video player"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe>
+                </div>
+                <div class="col-lg-5 col-md-4 rounded shadow bg-dark p-3 video-frame">
+                    <iframe class="img-thumbnail" width="560" height="315"
+                        src="https://www.youtube.com/embed/mlmv6UvSIp4?si=5_psIoj4lJZj7zQf" title="YouTube video player"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe>
+                </div>
+
+                <span class="row justify-content-center my-5 text-center">
+                    <div class="col-lg-4 col-md-4">
+                        <a href="home.html" class="btn btn-dark btn-lg"><i class="bi bi-arrow-left"></i> Back to
+                            Homepage</a>
+                    </div>
+                </span>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
